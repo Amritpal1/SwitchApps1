@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SwitchApps</string>
+    <string name="app_play">SwitchApps-Play</string>
+    <string name="app_manual">SwitchApps-Manual</string>
+    <string name="app_score">SwitchApps-Score</string>
+</resources>
