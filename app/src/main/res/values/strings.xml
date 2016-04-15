@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">SwitchApps</string>
-    <string name="app_play">SwitchApps-Play</string>
-    <string name="app_manual">SwitchApps-Manual</string>
-    <string name="app_score">SwitchApps-Score</string>
+    <string name="app_name">Solitaire</string>
+    <string name="app_play">Play</string>
+    <string name="app_manual">Rules</string>
+    <string name="app_score">Score</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_play">Play</string>
+    <string name="title_activity_score">Score</string>
+    <string name="action_settings">Settings</string>
 </resources>

@@ -15,30 +15,51 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name= ".SecondActivity"
-                    android:label="@string/app_manual">
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="landscape"
+            android:label="Play">
             <intent-filter>
-                <action android:name="com.example.amritpal.SecondActivity"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name= ".PlayActivity"
-            android:label="@string/app_play">
-            <intent-filter>
-                <action android:name="com.example.amritpal..PlayActivity" />
+                <action android:name="com.example.amritpal.Main2Activity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name= ".ScoreActivity"
-            android:label="@string/app_score">
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/app_manual">
             <intent-filter>
-                <action android:name="com.example.amritpal.ScoreActivity" />
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.example.amritpal.SecondActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayActivity"
+            android:label="PlayActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".ScoreActivity"
+            android:label="@string/title_activity_score"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
         </activity>
     </application>
 

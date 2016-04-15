@@ -1,5 +1,6 @@
 package com.example.amritpal.switchapps;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.app.Activity;
@@ -64,8 +65,8 @@ public class MainActivity extends Activity implements OnClickListener {
             /*SECOND WAY */
             switch (v.getId()) {
                 case R.id.button:
-                    Intent i = new Intent(this, PlayActivity.class);
-                    startActivityForResult(i, PLAY_REQUEST_CODE);
+                    Intent i = new Intent(this, Main2Activity.class);
+                    startActivity(i);
 
                     Toast.makeText(getApplicationContext(), "Let The Games Begin!", Toast.LENGTH_SHORT).show();
                     break;
@@ -84,9 +85,9 @@ public class MainActivity extends Activity implements OnClickListener {
                     Toast.makeText(getApplicationContext(), "What's Your Score", Toast.LENGTH_SHORT).show();
                     break;
 
-//                case R.id.button4:
-//
-//                    break;
+                case R.id.button4:
+                    Toast.makeText(getApplicationContext(), "Nothing Yet!", Toast.LENGTH_SHORT).show();
+                    break;
 
                 default:
                     break;
@@ -95,4 +96,7 @@ public class MainActivity extends Activity implements OnClickListener {
 //    };
 
 
-            }}}
+            }}
+
+
+}
