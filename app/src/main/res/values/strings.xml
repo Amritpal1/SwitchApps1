@@ -5,6 +5,7 @@
     <string name="app_score">Score</string>
     <string name="title_activity_detail">DetailActivity</string>
     <string name="title_activity_play">Play</string>
+    <string name="title_activity_second">Manual</string>
     <string name="title_activity_score">Score</string>
     <string name="action_settings">Settings</string>
 </resources>

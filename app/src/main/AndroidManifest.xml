@@ -17,22 +17,32 @@
         </activity>
         <activity
             android:name=".Main2Activity"
-            android:screenOrientation="landscape"
-            android:label="Play">
-            <intent-filter>
+            android:screenOrientation="sensorLandscape"
+            android:label="@string/title_activity_play"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--intent-filter>
                 <action android:name="com.example.amritpal.Main2Activity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            </intent-filter-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:label="@string/app_manual">
-            <intent-filter>
+            android:label="@string/title_activity_second"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--intent-filter>
                 <action android:name="com.example.amritpal.SecondActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            </intent-filter-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
         </activity>
         <activity
             android:name=".PlayActivity"
